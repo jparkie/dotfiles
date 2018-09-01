@@ -1,0 +1,10 @@
+[user]
+	name = Jacob Park
+	email = [TODO]
+
+[github]
+	user = jparkie
+
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore_global
