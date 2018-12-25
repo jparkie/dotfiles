@@ -1,5 +1,26 @@
 #!/bin/bash
 
+set -euo pipefail
+IFS=$'\n\t'
+
+#
+# Functions:
+#
+
+function echo_info() {
+	echo "[dotfiles/brew] INFO setup.sh - $1" >&1
+}
+
+function echo_error() {
+	echo "[dotfiles/brew] ERROR setup.sh - $1" >&1
+}
+
+#
+# Constants:
+#
+
+DIR="$(cd "$(dirname "$0")"; pwd -P)"
+
 # 1. Install Homebrew
 if [[ ! $(command -v brew) ]]; then
 	ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
