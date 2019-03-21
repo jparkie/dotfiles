@@ -45,6 +45,7 @@ brew install htop
 brew install jq
 brew install netcat
 brew install nmap
+brew install recode
 brew install sshfs
 brew install telnet
 brew install tmux
